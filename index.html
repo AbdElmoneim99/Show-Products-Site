@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="py-5">
+      <div class="container">
+        <h1>Product</h1>
+        <div class="mb-4">
+          <label for="productName"></label>
+          <input
+            class="form-control"
+            type="text"
+            name="productName"
+            id="productName"
+            placeholder="Product Name"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="productPrice"></label>
+          <input
+            class="form-control"
+            type="number"
+            name="productPrice"
+            id="productPrice"
+            placeholder="Product Price"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="productCateg"></label>
+          <input
+            class="form-control"
+            type="text"
+            name="productCateg"
+            id="productCateg"
+            placeholder="Product Category"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="productDesc"></label>
+          <input
+            class="form-control"
+            type="text"
+            name="productDesc"
+            id="productDesc"
+            placeholder="Product Description"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="productCount"></label>
+          <input
+            class="form-control w-25"
+            type="number"
+            name="productCount"
+            id="productCount"
+            placeholder="Product Count"
+          />
+        </div>
+        <button
+          id="AddProduct"
+          class="btn btn-info mt-4"
+          onclick="addProduct() "
+        >
+          Add Product
+        </button>
+        <button class="btn btn-danger mt-4" onclick="deleteAll()">
+          Delete All
+        </button>
+        <table class="table mt-4 text-center table-bordered">
+          <thead>
+            <th class="bg-dark text-light">ID</th>
+            <th class="bg-dark text-light">Name</th>
+            <th class="bg-dark text-light">Price</th>
+            <th class="bg-dark text-light">Category</th>
+            <th class="bg-dark text-light">Description</th>
+            <th class="bg-dark text-light">Delete</th>
+            <th class="bg-dark text-light">Update</th>
+          </thead>
+          <tbody id="tBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
